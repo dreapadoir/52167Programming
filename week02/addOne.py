@@ -5,4 +5,4 @@
 number = int(input("Enter a number: ")) # takes an input of a single number from the user
 nextNumber = number + 1     # adds 1 to the variable number and saves that as a new variable
 
-print(str(number) + " plus 1 is equal to " + str(nextNumber))
+print(str(number) + " plus 1 is equal to " + str(nextNumber)) # str functions converts variables to strings so they can be printed using +
