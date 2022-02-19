@@ -1,16 +1,16 @@
 #program to test ideas for week 5 task
 #Author: David Higgins
 
+from datetime import datetime
+
 weekdays = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday')
 weekend = ('Saturday', 'Sunday')
 
-day = input("Enter a weekday: ")
+day = datetime.today().strftime('%A')
 
-if day.capitalize() in weekdays:
-    print('It is a weekday')
+if day in weekdays:
+    print('Today is {}, it is a weekday'.format(day))
 
-elif day.capitalize() in weekend:
-    print('It is the weekend')
+elif day in weekend:
+    print('Today is {}, it is the weekend'.format(day))
 
-else:
-    print('Error: what you entered is not a day')
