@@ -6,10 +6,10 @@ weekend = ('Saturday', 'Sunday')
 
 day = input("Enter a weekday: ")
 
-if day in weekdays:
+if day.capitalize() in weekdays:
     print('It is a weekday')
 
-elif day in weekend:
+elif day.capitalize() in weekend:
     print('It is the weekend')
 
 else:
